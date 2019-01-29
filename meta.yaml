@@ -1,0 +1,63 @@
+{% set name = "siac" %}
+{% set version = "2.1.2" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  git_url: https://github.com/MarcYin/SIAC.git
+  git_tag: master
+
+build:
+  channels:
+    - anaconda
+    - conda-forge
+    - jgomezdans 
+  number: 0
+  noarch: generic
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+
+requirements:
+  host:
+    - gdal >=2.1
+    - gp_emulator
+    - lightgbm >=2.1.0
+    - numpy >=1.13
+    - pip
+    - psutil
+    - python
+    - requests
+    - scikit-image
+    - scikit-learn
+    - scipy >=1.0
+    - six
+  run:
+    - gdal >=2.1
+    - gp_emulator
+    - lightgbm >=2.1.0
+    - numpy >=1.13
+    - psutil
+    - python
+    - requests
+    - scikit-image
+    - scikit-learn
+    - scipy >=1.0
+    - six
+
+test:
+  imports:
+    - SIAC
+
+about:
+  home: https://github.com/MarcYin/SIAC
+  license: GNU Affero General Public v3.0
+  license_family: AGPL
+  license_file: 
+  summary: A sensor invariant Atmospheric Correction (SIAC)
+  doc_url: 
+  dev_url: 
+
+extra:
+  recipe-maintainers:
+    - your-github-id-here
