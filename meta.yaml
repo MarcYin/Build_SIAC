@@ -10,10 +10,6 @@ source:
   git_tag: master
 
 build:
-  channels:
-    - anaconda
-    - conda-forge
-    - jgomezdans 
   number: 0
   noarch: generic
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
