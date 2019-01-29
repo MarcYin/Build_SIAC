@@ -27,6 +27,7 @@ install:
 script:
   # Output something every 10 minutes or Travis kills the job
   - while sleep 9m; do echo "=====[ $SECONDS seconds still running ]====="; done &
+  - find ~ -iname miniconda.sh -delete
   - bash conda_upload.sh
   #Killing background sleep loop
   - kill %1
