@@ -46,8 +46,8 @@ requirements:
     - six
 
 test:
-  imports:
-    - SIAC
+  commands:
+    - echo 'Hello world'
 
 about:
   home: https://github.com/MarcYin/SIAC
