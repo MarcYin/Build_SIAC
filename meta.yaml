@@ -21,6 +21,7 @@ requirements:
     - lightgbm >=2.1.0
     - numpy >=1.13
     - pip
+    - python
     - psutil
     - requests
     - scikit-image
