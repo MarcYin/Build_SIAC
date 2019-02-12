@@ -22,7 +22,6 @@ requirements:
     - numpy >=1.13
     - pip
     - psutil
-    - python
     - requests
     - scikit-image
     - scikit-learn
@@ -34,7 +33,6 @@ requirements:
     - lightgbm >=2.1.0
     - numpy >=1.13
     - psutil
-    - python
     - requests
     - scikit-image
     - scikit-learn
