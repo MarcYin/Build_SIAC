@@ -33,6 +33,7 @@ requirements:
     - gp_emulator
     - lightgbm >=2.1.0
     - numpy >=1.13
+    - python
     - psutil
     - requests
     - scikit-image
