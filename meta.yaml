@@ -27,6 +27,7 @@ requirements:
     - scikit-learn
     - scipy >=1.0
     - six
+    - pyproj
   run:
     - gdal >=2.1
     - lightgbm >=2.1.0
@@ -37,6 +38,7 @@ requirements:
     - scikit-learn
     - scipy >=1.0
     - six
+    - pyproj
 
 test:
   commands:
