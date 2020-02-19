@@ -28,6 +28,7 @@ requirements:
     - scipy >=1.0
     - six
     - pyproj
+    - numba
   run:
     - gdal >=2.1
     - lightgbm >=2.1.0
@@ -39,6 +40,7 @@ requirements:
     - scipy >=1.0
     - six
     - pyproj
+    - numba
 
 test:
   commands:
