@@ -1,5 +1,5 @@
 {% set name = "siac" %}
-{% set version = "2.3.3" %}
+{% set version = "2.3.5" %}
 
 package:
   name: "{{ name|lower }}"
